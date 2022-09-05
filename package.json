@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet N°3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbaddonLCR/P3---Ohmyfood.git"
+  },
+  "author": "SELLIER Alexandre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbaddonLCR/P3---Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/AbaddonLCR/P3---Ohmyfood#readme"
+}
