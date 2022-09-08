@@ -1,5 +1,0 @@
-// Texte //
-$font-roboto:(font-family: 'Roboto', sans-serif);
-
-// Logo + titres //
-$font-shrikhand:(font-family: 'Shrikhand', cursive);
