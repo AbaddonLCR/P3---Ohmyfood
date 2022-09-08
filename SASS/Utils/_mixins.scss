@@ -1,0 +1,7 @@
+@mixin btn-shadow {
+    box-shadow: 1px 1px 5px 2px #0002003d; }
+
+@mixin little-zoom {
+    cursor: pointer;
+    transform: scale(1.05);
+}

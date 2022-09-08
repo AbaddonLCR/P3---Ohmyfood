@@ -1,0 +1,15 @@
+button{
+    border-radius: 25px;
+    border: none;
+    padding: 16px;
+    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+    transition: 200ms;
+    color: white;
+
+    @include btn-shadow;
+
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+}
