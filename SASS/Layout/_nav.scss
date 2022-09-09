@@ -1,0 +1,55 @@
+nav {
+    margin: 35px 20px;
+    counter-reset: numbers;
+
+    h3 {
+        margin: 0px 0px 25px 0px;
+    }
+
+    & ol {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style-type: none;
+        position: relative;
+        padding: 0px;
+    }
+
+    & li {
+        background-color: #f6f6f6;
+        padding: 18px 25px;
+        border: solid 1px grey;
+        border-radius: 15px;
+        flex-grow: 1;
+        @include btn-shadow;
+
+        &::before {
+            content: counter(numbers);
+            counter-increment: numbers;
+            color: white;
+            background-color: #9356DC;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: absolute;
+            left: -10px;
+        }
+
+        &:hover {
+            @include little-zoom;
+            background-color: #f7e4f2;
+
+            & i {
+                color: #9356DC;
+            }
+        }
+
+        & i {
+            padding-right: 15px;
+            color: grey;
+        }
+    }
+}

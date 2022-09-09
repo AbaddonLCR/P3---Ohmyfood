@@ -1,2 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+
+//Logo + Titres
+header img, footer img, h3, h4 {
+    font-family: 'Shrikhand', 'cursive';
+}
+
+//Texte
+p {
+    font-family: 'Roboto', 'sans-serif';
+}

@@ -1,0 +1,29 @@
+footer {
+    background-color: $darkgrey;
+    color: white;
+
+    >div {
+        margin: 0px 20px;
+        padding-bottom: 20px;
+    }
+
+    p {
+        margin: 0px;
+
+        i {
+            width: 15px;
+            padding-right: 5px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    img{
+        padding: 10px 0px;
+        width: 30%;
+        filter: invert(100%);
+    }
+}
