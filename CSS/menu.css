@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+body {
+  width: 100%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header img, footer img, h3, h4 {
+  font-family: "Shrikhand", "cursive";
+}
+
+p {
+  font-family: "Roboto", "sans-serif";
+}
+
+.index_button {
+  border-radius: 25px;
+  border: none;
+  padding: 15px;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  transition: 200ms;
+  color: white;
+  box-shadow: 1px 1px 5px 2px rgba(0, 2, 0, 0.2392156863);
+}
+.index_button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.menu_button {
+  border-radius: 25px;
+  border: none;
+  padding: 15px 40px;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  transition: 200ms;
+  color: white;
+  box-shadow: 1px 1px 5px 2px rgba(0, 2, 0, 0.2392156863);
+}
+.menu_button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+}
+footer > div {
+  margin: 0px 20px;
+  padding-bottom: 20px;
+}
+footer p {
+  margin: 0px;
+}
+footer p i {
+  width: 15px;
+  padding-right: 5px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer img {
+  padding: 15px 0px;
+  width: 30%;
+  filter: invert(100%);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  padding: 15px 0px;
+  border-bottom: solid 1px grey;
+}
+header .logo a {
+  width: 5%;
+  margin: 0px 70px 0px 20px;
+}
+header .logo img {
+  width: 35%;
+}
+header .presentation img {
+  display: block;
+  width: 100%;
+  max-height: 233.33px;
+  object-fit: cover;
+}
+
+section {
+  position: relative;
+  bottom: 20px;
+}
+section .background_section {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #F3F3F3;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #F3F3F3;
+  padding: 0px 10px;
+}
+section .background_section .menu_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 20px 0px 0px;
+}
+section .background_section .background_menu_button {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.background_entrees h3, .background_plats h3, .background_desserts h3 {
+  margin: 0px;
+  border-bottom: solid 3px #99E2D0;
+  width: 20%;
+}
+.background_entrees .background_cards_entrees, .background_entrees .background_cards_plats, .background_entrees .background_cards_desserts, .background_plats .background_cards_entrees, .background_plats .background_cards_plats, .background_plats .background_cards_desserts, .background_desserts .background_cards_entrees, .background_desserts .background_cards_plats, .background_desserts .background_cards_desserts {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px 40px;
+  gap: 20px;
+}
+.background_entrees .background_cards_entrees .background_card, .background_entrees .background_cards_plats .background_card, .background_entrees .background_cards_desserts .background_card, .background_plats .background_cards_entrees .background_card, .background_plats .background_cards_plats .background_card, .background_plats .background_cards_desserts .background_card, .background_desserts .background_cards_entrees .background_card, .background_desserts .background_cards_plats .background_card, .background_desserts .background_cards_desserts .background_card {
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 2px rgba(0, 2, 0, 0.2392156863);
+}
+.background_entrees .background_cards_entrees .background_card .card, .background_entrees .background_cards_plats .background_card .card, .background_entrees .background_cards_desserts .background_card .card, .background_plats .background_cards_entrees .background_card .card, .background_plats .background_cards_plats .background_card .card, .background_plats .background_cards_desserts .background_card .card, .background_desserts .background_cards_entrees .background_card .card, .background_desserts .background_cards_plats .background_card .card, .background_desserts .background_cards_desserts .background_card .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 20px 10px 10px;
+}
+.background_entrees .background_cards_entrees .background_card .card h4, .background_entrees .background_cards_plats .background_card .card h4, .background_entrees .background_cards_desserts .background_card .card h4, .background_plats .background_cards_entrees .background_card .card h4, .background_plats .background_cards_plats .background_card .card h4, .background_plats .background_cards_desserts .background_card .card h4, .background_desserts .background_cards_entrees .background_card .card h4, .background_desserts .background_cards_plats .background_card .card h4, .background_desserts .background_cards_desserts .background_card .card h4 {
+  margin: 0px;
+}
+.background_entrees .background_cards_entrees .background_card .card p, .background_entrees .background_cards_plats .background_card .card p, .background_entrees .background_cards_desserts .background_card .card p, .background_plats .background_cards_entrees .background_card .card p, .background_plats .background_cards_plats .background_card .card p, .background_plats .background_cards_desserts .background_card .card p, .background_desserts .background_cards_entrees .background_card .card p, .background_desserts .background_cards_plats .background_card .card p, .background_desserts .background_cards_desserts .background_card .card p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+}
+
+/*# sourceMappingURL=menu.css.map */

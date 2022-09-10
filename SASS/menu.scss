@@ -1,0 +1,97 @@
+@import './Utils/variables';
+@import './Utils/mixins';
+@import "./Base/base";
+@import "./Base/polices";
+@import "./Components/button";
+@import "./Layout/footer";
+
+header {
+
+    & .logo {
+        display: flex;
+        align-items: center;
+        padding: 15px 0px;
+        border-bottom: solid 1px grey;
+
+        & a{
+            width: 5%;
+            margin: 0px 70px 0px 20px;
+        }
+
+        & img{
+            width: 35%;
+        }
+    }
+
+    & .presentation img {
+        display: block;
+        width: 100%;
+        max-height: 233.33px;
+        object-fit: cover;
+    }
+}
+
+section {
+    position: relative;
+    bottom: 20px;
+    .background_section{
+        display: flex;
+        flex-direction: column;
+        border: solid 1px #F3F3F3;
+        border-radius: 20px 20px 0px 0px;
+        background-color: #F3F3F3;
+        padding: 0px 10px;
+
+        & .menu_title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0px 20px 0px 0px;
+        }
+
+        .background_menu_button{
+            text-align: center;
+            padding-bottom: 40px;
+        }
+    }
+}
+
+.background_entrees, .background_plats, .background_desserts{
+
+    h3{
+        margin: 0px;
+        border-bottom: solid 3px #99E2D0;
+        width: 20%;
+    }
+
+    .background_cards_entrees, .background_cards_plats, .background_cards_desserts{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px 40px;
+        gap: 20px;
+
+        .background_card{
+            display: flex;
+            border-radius: 20px;
+            box-shadow: 1px 1px 5px 2px #0002003d;
+
+            .card{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 10px 20px 10px 10px;
+
+                h4{
+                    margin: 0px;
+                }
+
+                p{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}
+

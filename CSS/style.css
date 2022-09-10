@@ -18,16 +18,30 @@ p {
   font-family: "Roboto", "sans-serif";
 }
 
-button {
+.index_button {
   border-radius: 25px;
   border: none;
-  padding: 16px;
+  padding: 15px;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   transition: 200ms;
   color: white;
   box-shadow: 1px 1px 5px 2px rgba(0, 2, 0, 0.2392156863);
 }
-button:hover {
+.index_button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.menu_button {
+  border-radius: 25px;
+  border: none;
+  padding: 15px 40px;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  transition: 200ms;
+  color: white;
+  box-shadow: 1px 1px 5px 2px rgba(0, 2, 0, 0.2392156863);
+}
+.menu_button:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
@@ -52,7 +66,7 @@ footer a {
   color: white;
 }
 footer img {
-  padding: 10px 0px;
+  padding: 15px 0px;
   width: 30%;
   filter: invert(100%);
 }
