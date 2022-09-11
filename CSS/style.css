@@ -10,7 +10,19 @@ a {
   color: black;
 }
 
-header img, footer img, h3, h4 {
+p {
+  font-size: 13px;
+}
+p.bold {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.bold_nom_menu {
+  padding: 0px;
+}
+
+header img, footer img, h2 {
   font-family: "Shrikhand", "cursive";
 }
 
@@ -98,7 +110,7 @@ header div img {
   background-color: #F3F3F3;
   height: 230px;
 }
-.explorer h3 {
+.explorer .bold {
   padding-top: 30px;
   margin: 0px;
   font-size: 24px;
@@ -108,7 +120,7 @@ nav {
   margin: 35px 20px;
   counter-reset: numbers;
 }
-nav h3 {
+nav .bold {
   margin: 0px 0px 25px 0px;
 }
 nav ol {
@@ -157,7 +169,7 @@ nav li i {
 section {
   background-color: #f6f6f6;
 }
-section h3 {
+section .bold {
   padding-top: 30px;
   margin: 0px 20px 15px 20px;
 }
@@ -200,7 +212,8 @@ section .card_description > div:nth-child(1) {
   width: 75%;
   padding: 7px 10px 10px 15px;
 }
-section .card_description > div:nth-child(1) h4 {
+section .card_description > div:nth-child(1) .bold {
+  padding: 0px;
   margin: 0px;
 }
 section .card_description > div:nth-child(1) p {

@@ -10,7 +10,19 @@ a {
   color: black;
 }
 
-header img, footer img, h3, h4 {
+p {
+  font-size: 13px;
+}
+p.bold {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.bold_nom_menu {
+  padding: 0px;
+}
+
+header img, footer img, h2 {
   font-family: "Shrikhand", "cursive";
 }
 
@@ -114,10 +126,8 @@ section .background_section .background_menu_button {
   padding-bottom: 40px;
 }
 
-.background_entrees h3, .background_plats h3, .background_desserts h3 {
+.background_entrees p, .background_plats p, .background_desserts p {
   margin: 0px;
-  border-bottom: solid 3px #99E2D0;
-  width: 20%;
 }
 .background_entrees .background_cards_entrees, .background_entrees .background_cards_plats, .background_entrees .background_cards_desserts, .background_plats .background_cards_entrees, .background_plats .background_cards_plats, .background_plats .background_cards_desserts, .background_desserts .background_cards_entrees, .background_desserts .background_cards_plats, .background_desserts .background_cards_desserts {
   display: flex;
@@ -135,9 +145,6 @@ section .background_section .background_menu_button {
   flex-direction: column;
   width: 100%;
   padding: 10px 20px 10px 10px;
-}
-.background_entrees .background_cards_entrees .background_card .card h4, .background_entrees .background_cards_plats .background_card .card h4, .background_entrees .background_cards_desserts .background_card .card h4, .background_plats .background_cards_entrees .background_card .card h4, .background_plats .background_cards_plats .background_card .card h4, .background_plats .background_cards_desserts .background_card .card h4, .background_desserts .background_cards_entrees .background_card .card h4, .background_desserts .background_cards_plats .background_card .card h4, .background_desserts .background_cards_desserts .background_card .card h4 {
-  margin: 0px;
 }
 .background_entrees .background_cards_entrees .background_card .card p, .background_entrees .background_cards_plats .background_card .card p, .background_entrees .background_cards_desserts .background_card .card p, .background_plats .background_cards_entrees .background_card .card p, .background_plats .background_cards_plats .background_card .card p, .background_plats .background_cards_desserts .background_card .card p, .background_desserts .background_cards_entrees .background_card .card p, .background_desserts .background_cards_plats .background_card .card p, .background_desserts .background_cards_desserts .background_card .card p {
   display: flex;

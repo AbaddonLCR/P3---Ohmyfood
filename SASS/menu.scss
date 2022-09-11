@@ -58,10 +58,8 @@ section {
 
 .background_entrees, .background_plats, .background_desserts{
 
-    h3{
+    p{
         margin: 0px;
-        border-bottom: solid 3px #99E2D0;
-        width: 20%;
     }
 
     .background_cards_entrees, .background_cards_plats, .background_cards_desserts{
@@ -80,10 +78,6 @@ section {
                 flex-direction: column;
                 width: 100%;
                 padding: 10px 20px 10px 10px;
-
-                h4{
-                    margin: 0px;
-                }
 
                 p{
                     display: flex;
