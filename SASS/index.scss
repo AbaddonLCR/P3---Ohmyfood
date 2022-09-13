@@ -9,3 +9,88 @@
 @import "./Layout/explorer";
 @import "./Layout/nav";
 @import "./Layout/section";
+
+// TABLETTE
+@media screen and (min-width: 560px) {
+    header{
+        padding: 15px 0px;
+
+        & div img{
+            width: 60%;
+        }
+    }
+
+    .ville{
+        & i{
+            font-size: 20px;
+        }
+        
+        & p{
+            font-size: 20px;
+        }
+    }
+
+    nav{
+        ol{
+            & li{
+                text-align: center;
+            }
+
+        }
+    }
+
+    section{
+        .cards{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+    
+            & .card{
+                width: 47%;
+            }
+        }
+    }
+
+    footer{
+        
+        .footer_logo{
+            text-align: center;
+            margin: 0px;
+        }
+
+        .nous_contacter{
+            column-count: 2;
+            gap: 150px;
+        }
+    }
+    
+}
+
+
+// DESKTOP
+@media screen and (min-width: 870px) {
+    nav{
+        ol{
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            & a{
+                width: 30%;
+                
+                & li{
+                    padding: 18px 20px;
+                }
+            }
+        }
+    }
+
+    footer{
+
+        >.nous_contacter{
+            display: flex;
+            justify-content: center;
+            column-count: 4;
+            gap: 100px;
+        }
+    }
+}

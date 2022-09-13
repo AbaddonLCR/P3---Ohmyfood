@@ -11,16 +11,14 @@ nav {
         flex-direction: column;
         gap: 20px;
         list-style-type: none;
-        position: relative;
         padding: 0px;
     }
 
     & li {
+        position: relative;
         background-color: #f6f6f6;
         padding: 18px 25px;
-        border: solid 1px grey;
         border-radius: 15px;
-        flex-grow: 1;
         @include btn-shadow;
 
         &::before {
