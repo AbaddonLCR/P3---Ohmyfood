@@ -1,9 +1,93 @@
 @import './Utils/variables';
 @import './Utils/mixins';
-@import "./Base/base";
+@import "./Base/base_menu";
 @import "./Base/polices";
 @import "./Components/button_menu";
 @import "./Layout/footer";
 @import "./Layout/header-menu";
 @import "./Layout/section-menu";
 
+// TABLETTE
+@media screen and (min-width: 640px) {
+
+    section{
+
+        .background_section{
+
+            .menu_title{
+                justify-content: right;
+
+                & h2{
+                    width: 50%;
+                    text-align: center;
+                }
+            }
+
+            .background_entrees, .background_plats, .background_desserts{
+
+                >div{
+                    display: flex;
+                    justify-content: center;
+        
+                    .border_title{
+                        padding: 0px 10px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+
+    footer{
+        
+        .footer_logo{
+            text-align: center;
+            margin: 0px;
+        }
+
+        .nous_contacter{
+            column-count: 2;
+            gap: 150px;
+        }
+    }
+}
+
+
+
+// DESKTOP
+@media screen and (min-width: 1024px) {
+
+    section{
+
+        .background_section{
+
+            .menu_title{
+                justify-content: center;
+
+                & h2{
+                    text-align: end;
+                    width: 25%;
+                }
+
+                & i{
+                    width: 5%;
+                }
+            }
+
+            .carte_menu{
+                column-count: 3;
+            }
+        }
+    }
+
+    footer{
+
+        >.nous_contacter{
+            display: flex;
+            justify-content: center;
+            column-count: 4;
+            gap: 100px;
+        }
+    }
+}

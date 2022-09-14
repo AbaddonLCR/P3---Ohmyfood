@@ -14,7 +14,12 @@ section {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin: 0px 20px 0px 0px;
+
+            & i{
+                width: 25%;
+                text-align: center;
+                line-height: 3;
+            }
         }
 
         .background_menu_button{
