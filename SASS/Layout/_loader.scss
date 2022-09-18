@@ -1,0 +1,48 @@
+.loader-container {
+    position: fixed;
+    background-color: #f3f3f3;
+    height: 100vh;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: 1s ease;
+    opacity: 0.9;
+    animation: end-loader 400ms 3s forwards;
+}
+
+.point {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $purple;
+    margin: 0px 15px;
+    opacity: 1;
+    animation: loader infinite 0.5s alternate;
+}
+
+.point2{
+    animation-delay: 100ms;
+    background-color: $pink;
+}
+
+.point3{
+    animation-delay: 150ms;
+    background-color: $mint;
+}
+@keyframes loader {
+
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes end-loader {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}

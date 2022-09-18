@@ -63,19 +63,5 @@ section {
                 margin: 0px;
             }
         }
-        
-        .favorite {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            padding: 7px 20px 10px 15px;
-            transform: scale(1);
-            transition: transform 1000ms;
-
-            .fa-regular:hover {
-                background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-                transform: scale(1.15);
-            }
-        }
     }
 }
