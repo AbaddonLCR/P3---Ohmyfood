@@ -1,15 +1,33 @@
-button{
+.btn{
     border-radius: 25px;
     border: none;
     padding: 15px;
-    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-    transition: 200ms;
     color: white;
+    background-image: linear-gradient(to top, $purple, $pink);
+    position: relative;
+    z-index: 1;
+    transition: 250ms;
 
     @include btn-shadow;
 
     &:hover{
-        cursor: pointer;
-        transform: scale(1.05);
+        @include little-zoom;
+        &::after{
+            opacity: 1;
+        }
+    }
+
+    &::after{
+        content: "";
+        border-radius: 25px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to top, lighten($purple, 5), lighten($pink, 5));
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
     }
 }

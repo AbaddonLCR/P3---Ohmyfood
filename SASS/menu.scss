@@ -76,7 +76,12 @@
             }
 
             .carte_menu{
-                column-count: 3;
+                display: flex;
+                justify-content: space-around;
+
+                .background_entrees, .background_plats, .background_desserts{
+                    width: 30%;
+                }
             }
         }
     }
