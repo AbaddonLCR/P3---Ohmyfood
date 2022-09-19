@@ -16,7 +16,7 @@
         .background_section{
 
             .menu_title{
-                justify-content: right;
+                justify-content: center;
 
                 & h2{
                     width: 50%;
@@ -67,12 +67,7 @@
                 justify-content: center;
 
                 & h2{
-                    text-align: end;
                     width: 25%;
-                }
-
-                & i{
-                    width: 5%;
                 }
             }
 
