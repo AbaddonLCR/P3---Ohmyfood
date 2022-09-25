@@ -22,7 +22,7 @@ p.bold {
   padding: 0px;
 }
 
-header img, footer img, h2 {
+header img, footer img, h2, h3 {
   font-family: "Shrikhand", "cursive";
 }
 
@@ -80,6 +80,7 @@ p, li, span {
   opacity: 0;
   transition: all 200ms ease;
   position: absolute;
+  font-size: 31px;
 }
 .favorite .fas:hover {
   opacity: 1;
