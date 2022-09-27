@@ -82,11 +82,36 @@ p, li, span {
   position: absolute;
   font-size: 31px;
 }
-.favorite .fas:hover {
+.favorite .fas:active {
   opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.2);
 }
 
+@media screen and (min-width: 870px) {
+  .favorite {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 7px 20px 10px 15px;
+    font-size: 30px;
+    position: relative;
+    z-index: 1;
+  }
+  .favorite .fas {
+    color: transparent;
+    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 200ms ease;
+    position: absolute;
+    font-size: 31px;
+  }
+  .favorite .fas:hover {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -334,10 +359,8 @@ section .card_description > div:nth-child(1) p {
     flex-direction: row;
     justify-content: space-evenly;
   }
-  nav ol a {
+  nav ol li {
     width: 30%;
-  }
-  nav ol a li {
     padding: 18px 20px;
   }
   footer > .nous_contacter {
