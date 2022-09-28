@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+@keyframes spin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 body {
   width: 100%;
   margin: auto;
@@ -184,34 +192,205 @@ section .background_section .background_menu_button {
   padding-bottom: 40px;
 }
 
-.background_entrees p, .background_plats p, .background_desserts p {
+.background_entrees p {
   margin: 0px;
 }
-.background_entrees p.border_title, .background_plats p.border_title, .background_desserts p.border_title {
+.background_entrees p .border_title {
   border-bottom: solid 3px #99E2D0;
   width: 10%;
 }
-.background_entrees .background_cards_entrees, .background_entrees .background_cards_plats, .background_entrees .background_cards_desserts, .background_plats .background_cards_entrees, .background_plats .background_cards_plats, .background_plats .background_cards_desserts, .background_desserts .background_cards_entrees, .background_desserts .background_cards_plats, .background_desserts .background_cards_desserts {
+.background_entrees .background_cards_entrees {
   display: flex;
   flex-direction: column;
   padding: 20px 0px 40px;
   gap: 20px;
 }
-.background_entrees .background_cards_entrees .background_card, .background_entrees .background_cards_plats .background_card, .background_entrees .background_cards_desserts .background_card, .background_plats .background_cards_entrees .background_card, .background_plats .background_cards_plats .background_card, .background_plats .background_cards_desserts .background_card, .background_desserts .background_cards_entrees .background_card, .background_desserts .background_cards_plats .background_card, .background_desserts .background_cards_desserts .background_card {
+.background_entrees .background_cards_entrees .background_card {
   display: flex;
   border-radius: 20px;
   box-shadow: 1px 1px 5px 2px rgba(0, 2, 0, 0.2392156863);
 }
-.background_entrees .background_cards_entrees .background_card .card, .background_entrees .background_cards_plats .background_card .card, .background_entrees .background_cards_desserts .background_card .card, .background_plats .background_cards_entrees .background_card .card, .background_plats .background_cards_plats .background_card .card, .background_plats .background_cards_desserts .background_card .card, .background_desserts .background_cards_entrees .background_card .card, .background_desserts .background_cards_plats .background_card .card, .background_desserts .background_cards_desserts .background_card .card {
+.background_entrees .background_cards_entrees .background_card .card {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.background_entrees .background_cards_entrees .background_card .card .card__description {
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.background_entrees .background_cards_entrees .background_card .card .card__description p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.background_entrees .background_cards_entrees .background_card .card .card__price {
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+  padding: 10px 20px 10px 10px;
+  margin-left: auto;
+}
+.background_entrees .background_cards_entrees .background_card .card .card__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #99e2d0;
+  margin-right: -70px;
+  width: 70px;
+  transition: margin-right 0.5s;
+}
+.background_entrees .background_cards_entrees .background_card .card .card__check i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  color: #99E2D0;
+  border-radius: 50%;
+  padding: 10px;
+}
+.background_entrees .background_cards_entrees .background_card .card:hover .card__check {
+  margin-right: 0;
+}
+.background_entrees .background_cards_entrees .background_card .card:hover .card__check i {
+  animation: spin 0.5s;
+}
+
+.background_plats p {
+  margin: 0px;
+}
+.background_plats p .border_title {
+  border-bottom: solid 3px #99E2D0;
+  width: 10%;
+}
+.background_plats .background_cards_plats {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding: 10px 20px 10px 10px;
+  padding: 20px 0px 40px;
+  gap: 20px;
 }
-.background_entrees .background_cards_entrees .background_card .card p, .background_entrees .background_cards_plats .background_card .card p, .background_entrees .background_cards_desserts .background_card .card p, .background_plats .background_cards_entrees .background_card .card p, .background_plats .background_cards_plats .background_card .card p, .background_plats .background_cards_desserts .background_card .card p, .background_desserts .background_cards_entrees .background_card .card p, .background_desserts .background_cards_plats .background_card .card p, .background_desserts .background_cards_desserts .background_card .card p {
+.background_plats .background_cards_plats .background_card {
   display: flex;
-  justify-content: space-between;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 2px rgba(0, 2, 0, 0.2392156863);
+}
+.background_plats .background_cards_plats .background_card .card {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.background_plats .background_cards_plats .background_card .card .card__description {
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.background_plats .background_cards_plats .background_card .card .card__description p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.background_plats .background_cards_plats .background_card .card .card__price {
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+  padding: 10px 20px 10px 10px;
+  margin-left: auto;
+}
+.background_plats .background_cards_plats .background_card .card .card__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #99e2d0;
+  margin-right: -70px;
+  width: 70px;
+  transition: margin-right 0.5s;
+}
+.background_plats .background_cards_plats .background_card .card .card__check i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  color: #99E2D0;
+  border-radius: 50%;
+  padding: 10px;
+}
+.background_plats .background_cards_plats .background_card .card:hover .card__check {
+  margin-right: 0;
+}
+.background_plats .background_cards_plats .background_card .card:hover .card__check i {
+  animation: spin 0.5s;
+}
+
+.background_desserts p {
   margin: 0px;
+}
+.background_desserts p .border_title {
+  border-bottom: solid 3px #99E2D0;
+  width: 10%;
+}
+.background_desserts .background_cards_desserts {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px 40px;
+  gap: 20px;
+}
+.background_desserts .background_cards_desserts .background_card {
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 2px rgba(0, 2, 0, 0.2392156863);
+}
+.background_desserts .background_cards_desserts .background_card .card {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.background_desserts .background_cards_desserts .background_card .card .card__description {
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.background_desserts .background_cards_desserts .background_card .card .card__description p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.background_desserts .background_cards_desserts .background_card .card .card__price {
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+  padding: 10px 20px 10px 10px;
+  margin-left: auto;
+}
+.background_desserts .background_cards_desserts .background_card .card .card__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #99e2d0;
+  margin-right: -70px;
+  width: 70px;
+  transition: margin-right 0.5s;
+}
+.background_desserts .background_cards_desserts .background_card .card .card__check i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  color: #99E2D0;
+  border-radius: 50%;
+  padding: 10px;
+}
+.background_desserts .background_cards_desserts .background_card .card:hover .card__check {
+  margin-right: 0;
+}
+.background_desserts .background_cards_desserts .background_card .card:hover .card__check i {
+  animation: spin 0.5s;
 }
 
 @media screen and (min-width: 640px) {
