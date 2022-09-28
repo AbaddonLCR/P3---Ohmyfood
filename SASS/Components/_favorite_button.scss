@@ -7,6 +7,10 @@
     position: relative;
     z-index: 1;
 
+    &:hover{
+        cursor: pointer;
+    }
+
     .fas{
         color: transparent;
         background-image: linear-gradient(to top, $purple, $pink);
@@ -25,7 +29,7 @@
 }
 
 // DESKTOP
-@media screen and (min-width: 870px) {
+@media screen and (min-width: 1024px) {
 
     .favorite{
         display: flex;
@@ -35,6 +39,10 @@
         font-size: 30px;
         position: relative;
         z-index: 1;
+
+        &:hover{
+            cursor: pointer;
+        }
 
         .fas{
             color: transparent;

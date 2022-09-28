@@ -80,6 +80,9 @@ p, li, span {
   position: relative;
   z-index: 1;
 }
+.favorite:hover {
+  cursor: pointer;
+}
 .favorite .fas {
   color: transparent;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
@@ -95,7 +98,7 @@ p, li, span {
   transform: scale(1.2);
 }
 
-@media screen and (min-width: 870px) {
+@media screen and (min-width: 1024px) {
   .favorite {
     display: flex;
     align-items: center;
@@ -104,6 +107,9 @@ p, li, span {
     font-size: 30px;
     position: relative;
     z-index: 1;
+  }
+  .favorite:hover {
+    cursor: pointer;
   }
   .favorite .fas {
     color: transparent;
