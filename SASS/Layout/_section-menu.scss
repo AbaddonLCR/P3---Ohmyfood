@@ -97,11 +97,22 @@ section {
                     }
                 }
 
-                &:hover .card__check{
+                &:active .card__check{
                     margin-right: 0;
+
 
                     i {
                         animation: spin 0.5s;
+                    }
+                }
+
+                @media screen and (min-width: 1024px) {
+                    &:hover .card__check{
+                        margin-right: 0;
+
+                        i {
+                            animation: spin 0.5s;
+                        }
                     }
                 }
             }
@@ -178,11 +189,22 @@ section {
                     }
                 }
 
-                &:hover .card__check{
+                &:active .card__check{
                     margin-right: 0;
+
 
                     i {
                         animation: spin 0.5s;
+                    }
+                }
+
+                @media screen and (min-width: 1024px) {
+                    &:hover .card__check{
+                        margin-right: 0;
+
+                        i {
+                            animation: spin 0.5s;
+                        }
                     }
                 }
             }
@@ -259,11 +281,22 @@ section {
                     }
                 }
 
-                &:hover .card__check{
+                &:active .card__check{
                     margin-right: 0;
+
 
                     i {
                         animation: spin 0.5s;
+                    }
+                }
+
+                @media screen and (min-width: 1024px) {
+                    &:hover .card__check{
+                        margin-right: 0;
+
+                        i {
+                            animation: spin 0.5s;
+                        }
                     }
                 }
             }
