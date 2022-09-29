@@ -33,7 +33,7 @@ section {
     & p{
         margin: 0px;
 
-        & .border_title{
+        &.border_title{
             border-bottom: solid 3px $mint;
             width: 10%;
         }
@@ -46,9 +46,15 @@ section {
         gap: 20px;
 
         .background_card{
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
+                    animation-delay: 100ms * $i;
+                }
+            }
             display: flex;
             border-radius: 20px;
             box-shadow: 1px 1px 5px 2px #0002003d;
+            animation: apparition 2s backwards;
 
             .card{
                 display: flex;
@@ -125,7 +131,7 @@ section {
     & p{
         margin: 0px;
 
-        & .border_title{
+        &.border_title{
             border-bottom: solid 3px $mint;
             width: 10%;
         }
@@ -138,9 +144,16 @@ section {
         gap: 20px;
 
         .background_card{
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
+                    animation-delay: 100ms * $i;
+                }
+            }
+
             display: flex;
             border-radius: 20px;
             box-shadow: 1px 1px 5px 2px #0002003d;
+            animation: apparition 2s backwards;
 
             .card{
                 display: flex;
@@ -217,7 +230,7 @@ section {
     & p{
         margin: 0px;
 
-        & .border_title{
+        &.border_title{
             border-bottom: solid 3px $mint;
             width: 10%;
         }
@@ -230,9 +243,16 @@ section {
         gap: 20px;
 
         .background_card{
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
+                    animation-delay: 100ms * $i;
+                }
+            }
+
             display: flex;
             border-radius: 20px;
             box-shadow: 1px 1px 5px 2px #0002003d;
+            animation: apparition 2s backwards;
 
             .card{
                 display: flex;
