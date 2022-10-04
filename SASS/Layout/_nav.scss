@@ -16,7 +16,7 @@ nav {
 
     & li {
         position: relative;
-        background-color: #f6f6f6;
+        background-color: $lightgrey2;
         padding: 18px 25px;
         border-radius: 15px;
         @include btn-shadow;
@@ -25,7 +25,7 @@ nav {
             content: counter(numbers);
             counter-increment: numbers;
             color: white;
-            background-color: #9356DC;
+            background-color: $purple;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -38,16 +38,16 @@ nav {
 
         &:hover {
             @include little-zoom;
-            background-color: #f7e4f2;
+            background-color: $lightpink;
 
             & i {
-                color: #9356DC;
+                color: $purple;
             }
         }
 
         & i {
             padding-right: 15px;
-            color: grey;
+            color: $grey;
         }
     }
 }

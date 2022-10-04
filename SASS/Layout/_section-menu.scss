@@ -1,16 +1,16 @@
 section {
-    background-color: #F3F3F3;
+    background-color: $lightgrey;
     .background_section{
         display: flex;
         flex-direction: column;
-        border: solid 1px #F3F3F3;
+        border: solid 1px $lightgrey;
         border-radius: 20px 20px 0px 0px;
-        background-color: #F3F3F3;
+        background-color: $lightgrey;
         padding: 0px 10px;
         position: relative;
         bottom: 20px;
 
-        & .menu_title{
+        & .restaurant_name{
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -28,7 +28,7 @@ section {
     }
 }
 
-.background_entrees{
+.restaurant_menu{
 
     & p{
         margin: 0px;
@@ -39,7 +39,7 @@ section {
         }
     }
 
-    .background_cards_entrees{
+    .background_cards{
         display: flex;
         flex-direction: column;
         padding: 20px 0px 40px;
@@ -53,7 +53,7 @@ section {
             }
             display: flex;
             border-radius: 20px;
-            box-shadow: 1px 1px 5px 2px #0002003d;
+            box-shadow: 1px 1px 5px 2px $shadow;
             animation: apparition 2s backwards;
 
             .card{
@@ -87,7 +87,7 @@ section {
                     justify-content: center;
                     align-items: center;
                     border-radius: 0px 20px 20px 0px;
-                    background-color: #99e2d0;
+                    background-color: $mint;
                     margin-right: -70px;
                     width: 70px;
                     transition: margin-right 0.5s;
@@ -96,205 +96,7 @@ section {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        background-color: #FFF;
-                        color: $mint;
-                        border-radius: 50%;
-                        padding: 10px;
-                    }
-                }
-
-                &:active .card__check{
-                    margin-right: 0;
-
-
-                    i {
-                        animation: spin 0.5s;
-                    }
-                }
-
-                @media screen and (min-width: 1024px) {
-                    &:hover .card__check{
-                        margin-right: 0;
-
-                        i {
-                            animation: spin 0.5s;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-.background_plats {
-    
-    & p{
-        margin: 0px;
-
-        &.border_title{
-            border-bottom: solid 3px $mint;
-            width: 10%;
-        }
-    }
-
-    .background_cards_plats{
-        display: flex;
-        flex-direction: column;
-        padding: 20px 0px 40px;
-        gap: 20px;
-
-        .background_card{
-            @for $i from 1 through 3 {
-                &:nth-child(#{$i}) {
-                    animation-delay: 100ms * $i;
-                }
-            }
-
-            display: flex;
-            border-radius: 20px;
-            box-shadow: 1px 1px 5px 2px #0002003d;
-            animation: apparition 2s backwards;
-
-            .card{
-                display: flex;
-                width: 100%;
-                overflow: hidden;
-                border-radius: 20px;
-                cursor: pointer;
-
-                .card__description{
-                    padding: 10px;
-                    white-space: nowrap;
-                    overflow: hidden;
-
-                    & p{
-                        text-overflow: ellipsis;
-                        overflow: hidden;
-                    }
-                }
-
-                .card__price{
-                    display: flex;
-                    align-items: flex-end;
-                    font-weight: bold;
-                    padding: 10px 20px 10px 10px;
-                    margin-left: auto;
-                }
-
-                .card__check{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 0px 20px 20px 0px;
-                    background-color: #99e2d0;
-                    margin-right: -70px;
-                    width: 70px;
-                    transition: margin-right 0.5s;
-
-                    & i {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: #FFF;
-                        color: $mint;
-                        border-radius: 50%;
-                        padding: 10px;
-                    }
-                }
-
-                &:active .card__check{
-                    margin-right: 0;
-
-
-                    i {
-                        animation: spin 0.5s;
-                    }
-                }
-
-                @media screen and (min-width: 1024px) {
-                    &:hover .card__check{
-                        margin-right: 0;
-
-                        i {
-                            animation: spin 0.5s;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-.background_desserts{
-
-    & p{
-        margin: 0px;
-
-        &.border_title{
-            border-bottom: solid 3px $mint;
-            width: 10%;
-        }
-    }
-
-    .background_cards_desserts{
-        display: flex;
-        flex-direction: column;
-        padding: 20px 0px 40px;
-        gap: 20px;
-
-        .background_card{
-            @for $i from 1 through 3 {
-                &:nth-child(#{$i}) {
-                    animation-delay: 100ms * $i;
-                }
-            }
-
-            display: flex;
-            border-radius: 20px;
-            box-shadow: 1px 1px 5px 2px #0002003d;
-            animation: apparition 2s backwards;
-
-            .card{
-                display: flex;
-                width: 100%;
-                overflow: hidden;
-                border-radius: 20px;
-                cursor: pointer;
-
-                .card__description{
-                    padding: 10px;
-                    white-space: nowrap;
-                    overflow: hidden;
-
-                    & p{
-                        text-overflow: ellipsis;
-                        overflow: hidden;
-                    }
-                }
-
-                .card__price{
-                    display: flex;
-                    align-items: flex-end;
-                    font-weight: bold;
-                    padding: 10px 20px 10px 10px;
-                    margin-left: auto;
-                }
-
-                .card__check{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 0px 20px 20px 0px;
-                    background-color: #99e2d0;
-                    margin-right: -70px;
-                    width: 70px;
-                    transition: margin-right 0.5s;
-
-                    & i {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: #FFF;
+                        background-color: $white;
                         color: $mint;
                         border-radius: 50%;
                         padding: 10px;

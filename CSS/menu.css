@@ -140,7 +140,7 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: #353535;
-  color: white;
+  color: #FFF;
   padding: 0px 20px 20px 20px;
 }
 footer .footer_logo img {
@@ -157,14 +157,14 @@ footer .nous_contacter p i {
 }
 footer .nous_contacter a {
   text-decoration: none;
-  color: white;
+  color: #FFF;
 }
 
 header .logo {
   display: flex;
   align-items: center;
   padding: 15px 0px;
-  border-bottom: solid 1px grey;
+  border-bottom: solid 1px #7e7e7e;
 }
 header .logo a {
   width: 30%;
@@ -194,12 +194,12 @@ section .background_section {
   position: relative;
   bottom: 20px;
 }
-section .background_section .menu_title {
+section .background_section .restaurant_name {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-section .background_section .menu_title i {
+section .background_section .restaurant_name i {
   text-align: center;
   line-height: 3;
 }
@@ -208,68 +208,68 @@ section .background_section .background_menu_button {
   padding-bottom: 40px;
 }
 
-.background_entrees p {
+.restaurant_menu p {
   margin: 0px;
 }
-.background_entrees p.border_title {
+.restaurant_menu p.border_title {
   border-bottom: solid 3px #99E2D0;
   width: 10%;
 }
-.background_entrees .background_cards_entrees {
+.restaurant_menu .background_cards {
   display: flex;
   flex-direction: column;
   padding: 20px 0px 40px;
   gap: 20px;
 }
-.background_entrees .background_cards_entrees .background_card {
+.restaurant_menu .background_cards .background_card {
   display: flex;
   border-radius: 20px;
   box-shadow: 1px 1px 5px 2px rgba(0, 2, 0, 0.2392156863);
   animation: apparition 2s backwards;
 }
-.background_entrees .background_cards_entrees .background_card:nth-child(1) {
+.restaurant_menu .background_cards .background_card:nth-child(1) {
   animation-delay: 100ms;
 }
-.background_entrees .background_cards_entrees .background_card:nth-child(2) {
+.restaurant_menu .background_cards .background_card:nth-child(2) {
   animation-delay: 200ms;
 }
-.background_entrees .background_cards_entrees .background_card:nth-child(3) {
+.restaurant_menu .background_cards .background_card:nth-child(3) {
   animation-delay: 300ms;
 }
-.background_entrees .background_cards_entrees .background_card .card {
+.restaurant_menu .background_cards .background_card .card {
   display: flex;
   width: 100%;
   overflow: hidden;
   border-radius: 20px;
   cursor: pointer;
 }
-.background_entrees .background_cards_entrees .background_card .card .card__description {
+.restaurant_menu .background_cards .background_card .card .card__description {
   padding: 10px;
   white-space: nowrap;
   overflow: hidden;
 }
-.background_entrees .background_cards_entrees .background_card .card .card__description p {
+.restaurant_menu .background_cards .background_card .card .card__description p {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.background_entrees .background_cards_entrees .background_card .card .card__price {
+.restaurant_menu .background_cards .background_card .card .card__price {
   display: flex;
   align-items: flex-end;
   font-weight: bold;
   padding: 10px 20px 10px 10px;
   margin-left: auto;
 }
-.background_entrees .background_cards_entrees .background_card .card .card__check {
+.restaurant_menu .background_cards .background_card .card .card__check {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0px 20px 20px 0px;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   margin-right: -70px;
   width: 70px;
   transition: margin-right 0.5s;
 }
-.background_entrees .background_cards_entrees .background_card .card .card__check i {
+.restaurant_menu .background_cards .background_card .card .card__check i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -278,204 +278,34 @@ section .background_section .background_menu_button {
   border-radius: 50%;
   padding: 10px;
 }
-.background_entrees .background_cards_entrees .background_card .card:active .card__check {
+.restaurant_menu .background_cards .background_card .card:active .card__check {
   margin-right: 0;
 }
-.background_entrees .background_cards_entrees .background_card .card:active .card__check i {
+.restaurant_menu .background_cards .background_card .card:active .card__check i {
   animation: spin 0.5s;
 }
 @media screen and (min-width: 1024px) {
-  .background_entrees .background_cards_entrees .background_card .card:hover .card__check {
+  .restaurant_menu .background_cards .background_card .card:hover .card__check {
     margin-right: 0;
   }
-  .background_entrees .background_cards_entrees .background_card .card:hover .card__check i {
-    animation: spin 0.5s;
-  }
-}
-
-.background_plats p {
-  margin: 0px;
-}
-.background_plats p.border_title {
-  border-bottom: solid 3px #99E2D0;
-  width: 10%;
-}
-.background_plats .background_cards_plats {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 0px 40px;
-  gap: 20px;
-}
-.background_plats .background_cards_plats .background_card {
-  display: flex;
-  border-radius: 20px;
-  box-shadow: 1px 1px 5px 2px rgba(0, 2, 0, 0.2392156863);
-  animation: apparition 2s backwards;
-}
-.background_plats .background_cards_plats .background_card:nth-child(1) {
-  animation-delay: 100ms;
-}
-.background_plats .background_cards_plats .background_card:nth-child(2) {
-  animation-delay: 200ms;
-}
-.background_plats .background_cards_plats .background_card:nth-child(3) {
-  animation-delay: 300ms;
-}
-.background_plats .background_cards_plats .background_card .card {
-  display: flex;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 20px;
-  cursor: pointer;
-}
-.background_plats .background_cards_plats .background_card .card .card__description {
-  padding: 10px;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.background_plats .background_cards_plats .background_card .card .card__description p {
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.background_plats .background_cards_plats .background_card .card .card__price {
-  display: flex;
-  align-items: flex-end;
-  font-weight: bold;
-  padding: 10px 20px 10px 10px;
-  margin-left: auto;
-}
-.background_plats .background_cards_plats .background_card .card .card__check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0px 20px 20px 0px;
-  background-color: #99e2d0;
-  margin-right: -70px;
-  width: 70px;
-  transition: margin-right 0.5s;
-}
-.background_plats .background_cards_plats .background_card .card .card__check i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #FFF;
-  color: #99E2D0;
-  border-radius: 50%;
-  padding: 10px;
-}
-.background_plats .background_cards_plats .background_card .card:active .card__check {
-  margin-right: 0;
-}
-.background_plats .background_cards_plats .background_card .card:active .card__check i {
-  animation: spin 0.5s;
-}
-@media screen and (min-width: 1024px) {
-  .background_plats .background_cards_plats .background_card .card:hover .card__check {
-    margin-right: 0;
-  }
-  .background_plats .background_cards_plats .background_card .card:hover .card__check i {
-    animation: spin 0.5s;
-  }
-}
-
-.background_desserts p {
-  margin: 0px;
-}
-.background_desserts p.border_title {
-  border-bottom: solid 3px #99E2D0;
-  width: 10%;
-}
-.background_desserts .background_cards_desserts {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 0px 40px;
-  gap: 20px;
-}
-.background_desserts .background_cards_desserts .background_card {
-  display: flex;
-  border-radius: 20px;
-  box-shadow: 1px 1px 5px 2px rgba(0, 2, 0, 0.2392156863);
-  animation: apparition 2s backwards;
-}
-.background_desserts .background_cards_desserts .background_card:nth-child(1) {
-  animation-delay: 100ms;
-}
-.background_desserts .background_cards_desserts .background_card:nth-child(2) {
-  animation-delay: 200ms;
-}
-.background_desserts .background_cards_desserts .background_card:nth-child(3) {
-  animation-delay: 300ms;
-}
-.background_desserts .background_cards_desserts .background_card .card {
-  display: flex;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 20px;
-  cursor: pointer;
-}
-.background_desserts .background_cards_desserts .background_card .card .card__description {
-  padding: 10px;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.background_desserts .background_cards_desserts .background_card .card .card__description p {
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.background_desserts .background_cards_desserts .background_card .card .card__price {
-  display: flex;
-  align-items: flex-end;
-  font-weight: bold;
-  padding: 10px 20px 10px 10px;
-  margin-left: auto;
-}
-.background_desserts .background_cards_desserts .background_card .card .card__check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0px 20px 20px 0px;
-  background-color: #99e2d0;
-  margin-right: -70px;
-  width: 70px;
-  transition: margin-right 0.5s;
-}
-.background_desserts .background_cards_desserts .background_card .card .card__check i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #FFF;
-  color: #99E2D0;
-  border-radius: 50%;
-  padding: 10px;
-}
-.background_desserts .background_cards_desserts .background_card .card:active .card__check {
-  margin-right: 0;
-}
-.background_desserts .background_cards_desserts .background_card .card:active .card__check i {
-  animation: spin 0.5s;
-}
-@media screen and (min-width: 1024px) {
-  .background_desserts .background_cards_desserts .background_card .card:hover .card__check {
-    margin-right: 0;
-  }
-  .background_desserts .background_cards_desserts .background_card .card:hover .card__check i {
+  .restaurant_menu .background_cards .background_card .card:hover .card__check i {
     animation: spin 0.5s;
   }
 }
 
 @media screen and (min-width: 640px) {
-  section .background_section .menu_title {
+  section .background_section .restaurant_name {
     justify-content: center;
   }
-  section .background_section .menu_title h2 {
+  section .background_section .restaurant_name h2 {
     width: 50%;
     text-align: center;
   }
-  section .background_section .background_entrees > div, section .background_section .background_plats > div, section .background_section .background_desserts > div {
+  section .background_section .restaurant_menu > div {
     display: flex;
     justify-content: center;
   }
-  section .background_section .background_entrees > div .border_title, section .background_section .background_plats > div .border_title, section .background_section .background_desserts > div .border_title {
+  section .background_section .restaurant_menu > div .border_title {
     padding: 0px 10px;
     text-align: center;
   }
@@ -489,17 +319,17 @@ section .background_section .background_menu_button {
   }
 }
 @media screen and (min-width: 1024px) {
-  section .background_section .menu_title {
+  section .background_section .restaurant_name {
     justify-content: center;
   }
-  section .background_section .menu_title h2 {
+  section .background_section .restaurant_name h2 {
     width: 25%;
   }
-  section .background_section .carte_menu {
+  section .background_section .restaurant_carte {
     display: flex;
     justify-content: space-around;
   }
-  section .background_section .carte_menu .background_entrees, section .background_section .carte_menu .background_plats, section .background_section .carte_menu .background_desserts {
+  section .background_section .restaurant_carte .restaurant_menu {
     width: 30%;
   }
   footer > .nous_contacter {

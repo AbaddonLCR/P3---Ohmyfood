@@ -16,7 +16,7 @@
 
         .background_section{
 
-            .menu_title{
+            .restaurant_name{
                 justify-content: center;
 
                 & h2{
@@ -25,7 +25,7 @@
                 }
             }
 
-            .background_entrees, .background_plats, .background_desserts{
+            .restaurant_menu{
 
                 >div{
                     display: flex;
@@ -64,7 +64,7 @@
 
         .background_section{
 
-            .menu_title{
+            .restaurant_name{
                 justify-content: center;
 
                 & h2{
@@ -72,11 +72,11 @@
                 }
             }
 
-            .carte_menu{
+            .restaurant_carte{
                 display: flex;
                 justify-content: space-around;
 
-                .background_entrees, .background_plats, .background_desserts{
+                .restaurant_menu{
                     width: 30%;
                 }
             }

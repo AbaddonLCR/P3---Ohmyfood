@@ -1,5 +1,5 @@
 section {
-    background-color: #f6f6f6;
+    background-color: $lightgrey2;
 
     .bold {
         padding-top: 30px;
@@ -16,7 +16,7 @@ section {
 
     .card {
         border-radius: 20px;
-        background-color: white;
+        background-color: $white;
         @include btn-shadow;
 
         &:nth-child(4) {
@@ -30,7 +30,7 @@ section {
 
     span {
         border-radius: 2px;
-        background-color: #99e2d0;
+        background-color: $mint;
         padding: 8px;
         font-size: 13px;
         position: absolute;
