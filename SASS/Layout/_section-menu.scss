@@ -86,6 +86,7 @@ section {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    flex-shrink: 0;
                     border-radius: 0px 20px 20px 0px;
                     background-color: $mint;
                     margin-right: -70px;
