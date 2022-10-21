@@ -158,6 +158,8 @@ footer .nous_contacter p i {
 footer .nous_contacter a {
   text-decoration: none;
   color: #FFF;
+  font-family: "Roboto", "sans-serif";
+  font-style: normal;
 }
 
 header .logo {
