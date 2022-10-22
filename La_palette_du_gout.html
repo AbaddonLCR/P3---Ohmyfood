@@ -10,9 +10,13 @@
 <body>
      <!-- ********************** HEADER ********************** -->
      <header>
-          <div class="logo">
-               <a title="retour" href="./index.html"><i class="fas fa-arrow-left fa-xl"></i></a>
-               <img src="images/logo/ohmyfood.png" alt="Logo Ohmyfood">
+          <div class="header-container">
+               <div class="return">
+               <a title="retour" href="./index.html"><i class="fas fa-arrow-left fa-lg"></i></a>
+               </div>
+               <div class="logo">
+                    <img src="images/logo/ohmyfood.png" alt="Logo Ohmyfood">
+               </div>
           </div>
           <div class="presentation">
                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
@@ -28,9 +32,15 @@
                <div class="background_section">
                     <div class="restaurant_name">
                          <h1>La palette du goût</h1>
-                         <div class="favorite">
-                              <i class="far fa-heart"></i>
-                              <i class="fas fa-heart"></i>
+                         <div>
+                              <div class="favorite">
+                                   <input type="checkbox" id="like_7" />
+                                   <label for="like_7">
+                                        <i class="far fa-heart"></i>
+                                        <i class="fas fa-heart"></i>
+                                        <span></span>
+                                   </label>
+                              </div>
                          </div>
                     </div>
                     

@@ -17,6 +17,7 @@ section {
     .card {
         border-radius: 20px;
         background-color: $white;
+        overflow: hidden;
         @include btn-shadow;
 
         &:nth-child(4) {

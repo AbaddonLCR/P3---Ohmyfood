@@ -10,15 +10,14 @@ a {
 
 p{
     font-size: 16px;
-
-    &.bold{
-        font-weight: bold;
-        font-size: 18px;
-    }
 }
 
-
-.bold_nom_menu{
-    padding: 0px;
+.bold{
+    font-size: 18px;
 }
 
+address a {
+    font-family: "Roboto", "sans-serif";
+    font-style: normal;
+    font-size: 16px;
+}
