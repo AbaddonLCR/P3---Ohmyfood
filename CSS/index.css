@@ -85,6 +85,7 @@ p, li, span, .bold {
   width: 30px;
   height: 30px;
   position: relative;
+  cursor: pointer;
 }
 .favorite label span {
   width: 30px;
