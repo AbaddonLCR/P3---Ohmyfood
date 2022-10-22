@@ -319,6 +319,9 @@ section .background_section .background_menu_button {
   padding: 10px 20px 10px 10px;
   margin-left: auto;
 }
+.restaurant_menu .background_cards .background_card .card input {
+  display: none;
+}
 .restaurant_menu .background_cards .background_card .card .card__check {
   display: flex;
   justify-content: center;
@@ -339,17 +342,17 @@ section .background_section .background_menu_button {
   border-radius: 50%;
   padding: 10px;
 }
-.restaurant_menu .background_cards .background_card .card:active .card__check {
+.restaurant_menu .background_cards .background_card .card input:checked + .card__check {
   margin-right: 0;
 }
-.restaurant_menu .background_cards .background_card .card:active .card__check i {
+.restaurant_menu .background_cards .background_card .card input:checked + .card__check i {
   animation: spin 0.5s;
 }
 @media screen and (min-width: 1024px) {
-  .restaurant_menu .background_cards .background_card .card:hover .card__check {
+  .restaurant_menu .background_cards .background_card .card:hover .card__check, .restaurant_menu .background_cards .background_card .card input:checked + .card__check {
     margin-right: 0;
   }
-  .restaurant_menu .background_cards .background_card .card:hover .card__check i {
+  .restaurant_menu .background_cards .background_card .card:hover .card__check i, .restaurant_menu .background_cards .background_card .card input:checked + .card__check i {
     animation: spin 0.5s;
   }
 }

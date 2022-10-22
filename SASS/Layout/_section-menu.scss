@@ -87,6 +87,10 @@ section {
                     margin-left: auto;
                 }
 
+                input {
+                    display: none;
+                }
+
                 .card__check{
                     display: flex;
                     justify-content: center;
@@ -109,24 +113,23 @@ section {
                     }
                 }
 
-                &:active .card__check{
+                input:checked + .card__check{
                     margin-right: 0;
-
 
                     i {
                         animation: spin 0.5s;
                     }
                 }
 
-                @media screen and (min-width: 1024px) {
-                    &:hover .card__check{
-                        margin-right: 0;
+            @media screen and (min-width: 1024px) {
+                &:hover .card__check, input:checked + .card__check{
+                    margin-right: 0;
 
-                        i {
-                            animation: spin 0.5s;
-                        }
+                    i {
+                        animation: spin 0.5s;
                     }
                 }
+            }
             }
         }
     }
