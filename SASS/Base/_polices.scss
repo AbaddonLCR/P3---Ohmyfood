@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
 
 //Logo + Titres
-header img, footer img, h2, h3 {
+.restaurant_name h1 {
     font-family: 'Shrikhand', 'cursive';
 }
 
 //Texte
-p, li, span {
+p, li, span, .bold {
     font-family: 'Roboto', 'sans-serif';
 }

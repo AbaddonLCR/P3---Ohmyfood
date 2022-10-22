@@ -26,17 +26,19 @@ section {
 
     .card_new {
         position: relative;
+
+        span {
+            border-radius: 2px;
+            background-color: $mint;
+            padding: 8px;
+            font-size: 13px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
     }
 
-    span {
-        border-radius: 2px;
-        background-color: $mint;
-        padding: 8px;
-        font-size: 13px;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-    }
+    
     
     img {
     display: block;

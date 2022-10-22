@@ -72,6 +72,11 @@ section {
                         text-overflow: ellipsis;
                         overflow: hidden;
                     }
+                    & h2{
+                        margin: 0px;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
                 }
 
                 .card__price{

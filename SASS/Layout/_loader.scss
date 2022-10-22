@@ -13,30 +13,27 @@
 }
 
 .point {
-    width: 50px;
-    height: 50px;
+    position: relative;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background-color: $purple;
-    margin: 0px 15px;
-    opacity: 1;
-    animation: loader infinite 0.5s alternate;
-}
+    background: conic-gradient($purple, $pink, $mint);
+    animation: spin 1s linear infinite;
 
-.point2{
-    animation-delay: 100ms;
-    background-color: $pink;
-}
-
-.point3{
-    animation-delay: 150ms;
-    background-color: $mint;
-}
-@keyframes loader {
-
-    100% {
-        transform: translateY(-30px);
+    &::before {
+        content: "";
+        background-color: $lightgrey;
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
+
 
 @keyframes end-loader {
     0% {
@@ -44,5 +41,11 @@
     }
     100% {
         transform: scale(0);
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
     }
 }

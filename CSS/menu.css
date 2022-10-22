@@ -31,20 +31,16 @@ a {
 p {
   font-size: 14px;
 }
-p.bold {
-  font-weight: bold;
+
+.bold {
   font-size: 18px;
 }
 
-.bold_nom_menu {
-  padding: 0px;
-}
-
-header img, footer img, h2, h3 {
+.restaurant_name h1 {
   font-family: "Shrikhand", "cursive";
 }
 
-p, li, span {
+p, li, span, .bold {
   font-family: "Roboto", "sans-serif";
 }
 
@@ -108,12 +104,21 @@ p, li, span {
   transform: scale(1.2);
 }
 
+@media screen and (min-width: 640px) {
+  .restaurant_name h1 {
+    width: 90%;
+    text-align: center;
+  }
+  .favorite {
+    justify-content: center;
+    padding: 0px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .favorite {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding: 7px 20px 10px 15px;
+    justify-content: center;
     font-size: 30px;
     position: relative;
     z-index: 1;
@@ -160,6 +165,7 @@ footer .nous_contacter a {
   color: #FFF;
   font-family: "Roboto", "sans-serif";
   font-style: normal;
+  font-size: 14px;
 }
 
 header .logo {
@@ -251,6 +257,11 @@ section .background_section .background_menu_button {
   overflow: hidden;
 }
 .restaurant_menu .background_cards .background_card .card .card__description p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.restaurant_menu .background_cards .background_card .card .card__description h2 {
+  margin: 0px;
   text-overflow: ellipsis;
   overflow: hidden;
 }
