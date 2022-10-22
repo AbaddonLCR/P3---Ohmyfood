@@ -18,7 +18,7 @@
     height: 200px;
     border-radius: 50%;
     background-color: $purple;
-    background: conic-gradient($purple, $pink, $mint);
+    background: conic-gradient($purple, $pink, $mint, $purple);
     animation: spin 1s linear infinite;
 
     &::before {

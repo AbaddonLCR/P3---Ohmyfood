@@ -223,7 +223,7 @@ header .header_logo img {
   height: 200px;
   border-radius: 50%;
   background-color: #9356DC;
-  background: conic-gradient(#9356DC, #FF79DA, #99E2D0);
+  background: conic-gradient(#9356DC, #FF79DA, #99E2D0, #9356DC);
   animation: spin 1s linear infinite;
 }
 .point::before {
