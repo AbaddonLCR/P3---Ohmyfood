@@ -33,6 +33,10 @@ p {
 }
 
 .bold {
+  font-weight: bold;
+}
+
+.h2-size, h2 {
   font-size: 18px;
 }
 
@@ -46,7 +50,7 @@ address a {
   font-family: "Shrikhand", "cursive";
 }
 
-p, li, span, .bold {
+p, li, span, .bold, label {
   font-family: "Roboto", "sans-serif";
 }
 
@@ -291,23 +295,30 @@ section .background_section .background_menu_button {
 .restaurant_menu .background_cards .background_card:nth-child(3) {
   animation-delay: 300ms;
 }
+.restaurant_menu .background_cards .background_card input {
+  display: none;
+}
 .restaurant_menu .background_cards .background_card .card {
   display: flex;
   width: 100%;
   overflow: hidden;
   border-radius: 20px;
-  cursor: pointer;
+}
+.restaurant_menu .background_cards .background_card .card input:checked + .card__check {
+  margin-right: 0;
+}
+.restaurant_menu .background_cards .background_card .card input:checked + .card__check i {
+  animation: spin 0.5s;
 }
 .restaurant_menu .background_cards .background_card .card .card__description {
+  width: 100%;
   padding: 10px;
   white-space: nowrap;
   overflow: hidden;
-}
-.restaurant_menu .background_cards .background_card .card .card__description p {
   text-overflow: ellipsis;
-  overflow: hidden;
+  cursor: pointer;
 }
-.restaurant_menu .background_cards .background_card .card .card__description h2 {
+.restaurant_menu .background_cards .background_card .card .card__description span {
   margin: 0px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -317,10 +328,6 @@ section .background_section .background_menu_button {
   align-items: flex-end;
   font-weight: bold;
   padding: 10px 20px 10px 10px;
-  margin-left: auto;
-}
-.restaurant_menu .background_cards .background_card .card input {
-  display: none;
 }
 .restaurant_menu .background_cards .background_card .card .card__check {
   display: flex;
@@ -342,17 +349,11 @@ section .background_section .background_menu_button {
   border-radius: 50%;
   padding: 10px;
 }
-.restaurant_menu .background_cards .background_card .card input:checked + .card__check {
-  margin-right: 0;
-}
-.restaurant_menu .background_cards .background_card .card input:checked + .card__check i {
-  animation: spin 0.5s;
-}
 @media screen and (min-width: 1024px) {
-  .restaurant_menu .background_cards .background_card .card:hover .card__check, .restaurant_menu .background_cards .background_card .card input:checked + .card__check {
+  .restaurant_menu .background_cards .background_card .card:hover .card__check, .restaurant_menu .background_cards .background_card .card input:checked + .card .card__check {
     margin-right: 0;
   }
-  .restaurant_menu .background_cards .background_card .card:hover .card__check i, .restaurant_menu .background_cards .background_card .card input:checked + .card__check i {
+  .restaurant_menu .background_cards .background_card .card:hover .card__check i, .restaurant_menu .background_cards .background_card .card input:checked + .card .card__check i {
     animation: spin 0.5s;
   }
 }
